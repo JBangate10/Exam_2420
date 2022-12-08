@@ -26,4 +26,23 @@ To find this in the man page, I search the keyword "json-pretty" by typing the c
 the man page, scroll down until I found the correct command.   
 ![Part 3-3!](./Images/part3-3.png)   
 
-   
+### Part 4:   
+Creating new regular users with home directory for each.   
+![Part 4-1!](./Images/part4-1.png)   
+
+### Part 5:   
+**Note:** Could not complete Part 4   
+I put the service file in the **finals** directory.   
+See serivce file created below:   
+
+```   
+[Unit]
+Description=run service file for a specific file
+
+[Service]
+Type=oneshot
+ExecStart=/opt/bob/bob
+
+[Install]
+WantedBy=multi-user.target   
+```
